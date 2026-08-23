@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Launcher</title>
+    <!-- โหลด Font Awesome สำหรับไอคอน -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            gap: 25px;
+            text-align: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .icon-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 120px;
+        }
+        .icon-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        .icon-card i {
+            font-size: 48px;
+            margin-bottom: 15px;
+            color: #4A90E2;
+        }
+        .icon-card.lotto i {
+            color: #E67E22;
+        }
+        .icon-card.irr i {
+            color: #047dc2;
+        }
+        .icon-card span {
+            font-weight: 600;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- ไอคอนแรก: Random -->
+        <a href="https://script.google.com/macros/s/AKfycbyGsD2UIHg3qFm2uwI4Es0uQsKOSCyOMXbHnXOqcPhOzcSK6CJCif1ggUobHMPct-3z/exec" class="icon-card" target="_blank">
+            <i class="fa-solid fa-shuffle"></i>
+            <span>Random</span>
+        </a>
+
+        <!-- ไอคอนสอง: Lotto -->
+        <a href="https://script.google.com/macros/s/AKfycbzY72LWVaJWMHvXoWMpPR2X3q9lvrelbArOCgxpHf8h7szGovPW0zGEYIDQRwvebngb/exec" class="icon-card lotto" target="_blank">
+            <i class="fa-solid fa-ticket"></i>
+            <span>Lotto</span>
+        </a>
+
+        <!-- ไอคอนสี่: IRR -->
+        <a href="https://tonsk.github.io/IRR/" class="icon-card irr" target="_blank">
+            <i class="fa-solid fa-calculator"></i>
+            <span>IRR</span>
+        </a>
+    </div>
+
+</body>
+</html>
